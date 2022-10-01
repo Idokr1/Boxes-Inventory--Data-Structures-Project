@@ -1,0 +1,5 @@
+﻿{
+ "maxBoxes": 50,
+ "lowAmountInBox": 3
+
+}

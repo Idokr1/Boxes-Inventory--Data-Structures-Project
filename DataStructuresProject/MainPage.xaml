@@ -1,0 +1,72 @@
+﻿<Page
+    x:Class="DataStructuresProject.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DataStructuresProject"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Height="600" Width="1000"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+
+        <TextBlock Grid.Column="0" x:Name="Title1" Text="Adding a New Box" FontSize="20" FontWeight="Bold" TextAlignment="Center"></TextBlock>
+        <TextBlock x:Name="WidthLength" Text="Width &amp; Length" FontWeight="Bold" FontSize="16" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,100,0,0"/>
+        <TextBox x:Name="X_Txt" Grid.Column="0" Width="50" Height="35" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="170,100,0,0"></TextBox>
+
+
+        <TextBlock x:Name="Hight" Text="Height" FontWeight="Bold" FontSize="16" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,200,0,0"/>
+        <TextBox x:Name="Y_Txt" Width="50" Height="35" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="170,200,0,0" />
+
+        <TextBlock x:Name="Amount" Text="Amount" FontWeight="Bold" FontSize="16" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,300,0,0"/>
+        <TextBox x:Name="Amount_Txt" Width="50" Height="35" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="170,300,0,0"  />
+
+        <Button x:Name="BtnAdd" Content="Add Box" FontSize="20" FontWeight="Bold" Click="BtnAdd_Click" HorizontalAlignment="Center" Background="#4C3DEC0E" Margin="0,400,0,0" VerticalAlignment="Top" />
+
+
+
+
+        <TextBlock Grid.Column="1" x:Name="Title2" Text="Buying New Boxes" FontSize="20" FontWeight="Bold" TextAlignment="Center"></TextBlock>
+        <TextBlock Grid.Column="1" x:Name="WidthLengthBuy" Text="Width &amp; Length" FontWeight="Bold" FontSize="16" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,100,0,0"></TextBlock>
+        <TextBox x:Name="XBuy_Txt" Grid.Column="1" Width="50" Height="35" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="170,100,0,0"></TextBox>
+
+
+        <TextBlock Grid.Column="1" x:Name="HeightBuy" Text="Height" FontWeight="Bold" FontSize="16" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,200,0,0"></TextBlock>
+        <TextBox x:Name="YBuy_Txt" Grid.Column="1" Width="50" Height="35" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="170,200,0,0" ></TextBox>
+
+        <TextBlock Grid.Column="1" x:Name="AmountBuy" Text="Amount" FontWeight="Bold" FontSize="16" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,300,0,0"></TextBlock>
+        <TextBox x:Name="AmountBuy_Txt" Grid.Column="1" Width="50" Height="35" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="170,300,0,0"/>
+
+        <Button x:Name="BtnBuy" Grid.Column="1" Content="Buy Box" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Click="BtnBuy_Click" Background="#4C3DEC0E" Margin="0,400,0,0" HorizontalAlignment="Center"/>
+
+
+        <TextBlock Grid.Column="2" x:Name="Title3" Text="Getting General Info" FontSize="20" FontWeight="Bold" TextAlignment="Center"></TextBlock>
+        <TextBlock Grid.Column="2" x:Name="WidhtLengthInfo" Text="Width &amp; Length" FontWeight="Bold" FontSize="16" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,100,0,0"></TextBlock>
+        <TextBox x:Name="XInfo_Txt" Grid.Column="2" Width="50" Height="35" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="170,100,0,0"></TextBox>
+
+
+        <TextBlock Grid.Column="2" x:Name="HeightInfo" Text="Height" FontWeight="Bold" FontSize="16" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,200,0,0" RenderTransformOrigin="0.655,5.104"></TextBlock>
+        <TextBox x:Name="YInfo_Txt" Grid.Column="2" Width="50" Height="35" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="170,200,0,0"></TextBox>
+
+        <Button x:Name="BtnGetInfo" Grid.Column="2" Content="Get Info" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Click="BtnGetInfo_Click" Background="#4C3DEC0E" Margin="0,400,0,0" ></Button>
+
+        <TextBlock Grid.Column="3" x:Name="Title4" Text="Showing Old Boxes" FontSize="20" FontWeight="Bold" TextAlignment="Center"></TextBlock>
+        <Button x:Name="BtnShowOldBoxes" Grid.Column="3" Content="Show Old Boxes" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Background="#4C3DEC0E" Margin="0,400,0,0" Click="BtnShowOldBoxes_Click" ></Button>
+        <TextBox x:Name="Hours_Txt" Grid.Column="3" Width="50" Height="35" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="170,100,0,0"/>
+        <TextBox x:Name="Minutes_Txt" Grid.Column="3" Width="50" Height="35" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="170,200,0,0" />
+        <TextBox x:Name="Seconds_Txt" Grid.Column="3" Width="50" Height="35" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="170,300,0,0"/>
+        <TextBlock Grid.Column="3" x:Name="Hours" Text="Hours" FontWeight="Bold" FontSize="16" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,100,0,0"/>
+        <TextBlock Grid.Column="3" x:Name="Minutes" Text="Minutes" FontWeight="Bold" FontSize="16" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,200,0,0"/>
+        <TextBlock Grid.Column="3" x:Name="Seconds" Text="Seconds" FontWeight="Bold" FontSize="16" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,300,0,0"/>
+
+
+    </Grid>
+</Page>
