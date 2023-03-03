@@ -6,10 +6,3 @@ My generic Binary Search Tree (BST) is designed to perform efficient searching a
 
 ## Doubly linked list
 The list that I have implemented emulates a queue-based addition approach and implements item deletion in descending order, ensuring that the efficiency of add and remove operations is maintained at O(1). This is achieved through the incorporation of Prev and Next pointers in each node, allowing for streamlined access to preceding and succeeding elements.
-
-
-
-
-
-
-
